@@ -767,3 +767,55 @@ label{
         width: 45% !important;
     }
 }
+/* Add this to your style.css */
+
+/* Mobile devices (phones, max 599px) */
+@media (max-width: 599px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .pics {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .content1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  .review .contain {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .below h1, .below p {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .quiz h2, .quiz a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+  }
+}
+
