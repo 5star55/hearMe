@@ -670,3 +670,100 @@ label{
 .result{
     color: red;
 }
+/* Base styles (apply to all sizes) */
+/* Add your existing base styles here or keep them in style.css */
+
+/* Small devices (phones, 0px – 599px) */
+@media (max-width: 599px) {
+    header, nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #ham, #cancel {
+        display: block;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .hero h1, .hero h2, .hero p,
+    .review, .quiz, .middle, .close, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .pics {
+        flex-direction: column;
+    }
+
+    .content-box {
+        width: 90% !important;
+        margin: 10px auto;
+    }
+
+    .content-container {
+        margin: 0;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 600px – 1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .content-container {
+        margin: 0 50px;
+    }
+
+    .content-box {
+        width: 45% !important;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    #ham, #cancel {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .pics {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content-container {
+        margin: 0 200px;
+    }
+
+    .content-box {
+        width: 45% !important;
+    }
+}
